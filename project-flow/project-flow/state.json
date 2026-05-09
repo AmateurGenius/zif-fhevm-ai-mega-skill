@@ -1,6 +1,0 @@
-{
-  "phase": "CONTEXT",
-  "projectName": "ZIF FHEVM Confidential App",
-  "mode": "safe",
-  "skillsDetected": ["fhevm-mega-skill"]
-}
