@@ -1,0 +1,12 @@
+{
+  "name": "zif-fhevm-ai-mega-skill",
+  "version": "3.1.0",
+  "description": "SSS+ Tier FHEVM AI Skill with Project-Flow + Flue + Inflectiv",
+  "scripts": {
+    "test": "echo \"Run in Flue sandbox\"",
+    "deploy": "echo \"Use EXAMPLES/deploy.ts\""
+  },
+  "dependencies": {
+    "@zama-fhe/sdk": "latest"
+  }
+}
