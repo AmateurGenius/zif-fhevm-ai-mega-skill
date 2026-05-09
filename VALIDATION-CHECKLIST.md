@@ -226,7 +226,18 @@
   "notes": "All checks passed. Ready for Zama testnet deployment."
 }
 ```
+# ZIF FHEVM Validation Checklist (Flue Auto-Run)
 
+- [ ] Inherits ZamaEthereumConfig
+- [ ] Uses only official encrypted types
+- [ ] Every new ciphertext has FHE.allowThis() or allowTransient()
+- [ ] Inputs use externalEuintXX + inputProof + FHE.fromExternal()
+- [ ] No view functions on encrypted data
+- [ ] Prefer ERC7984 for tokens
+- [ ] ACL granted before any sensitive operation
+- [ ] Gas-optimized (smallest euint type)
+- [ ] Tests include decryption simulation
+- [ ] No anti-patterns from ANTI_PATTERNS.md
 ---
 
 **Last Updated:** May 2026
