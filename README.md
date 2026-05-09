@@ -8,7 +8,9 @@ No more digging through documentation. No more hallucinations on ACL rules, inpu
 
 ### The Complete Stack – What Each Layer Brings
 
-#### 1. ZIF Skill Engine (`SKILL.md`)
+Z-I-F stands for ZAMA-INFLECTIVE-FLUE
+
+## 1. ZIF Skill Engine (`SKILL.md`)
 - The **core brain** of the system.
 - Contains perfect, up-to-date (May 2026) knowledge of FHEVM architecture, encrypted types, FHE operations, ACL patterns, input proofs, EIP-712 decryption, ERC-7984 integration, and anti-patterns.
 - Provides strict guardrails ("NEVER BREAK THESE RULES") that prevent the most common FHEVM mistakes (missing `FHE.allowThis()`, using `view` on encrypted data, wrong input proofs, etc.).
@@ -82,3 +84,5 @@ The agent automatically follows the full disciplined workflow and delivers every
 - **Completeness** — Full end-to-end workflow (contract → test → deploy → frontend).
 - **Error Prevention** — Multiple layered guardrails.
 - **Future-Proof** — Easily extensible as new Zama tools emerge.
+
+Enjoy building confidential dapps using natural language, go from idea to product with this ZIF Mega Skill.
