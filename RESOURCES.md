@@ -22,6 +22,14 @@
 - **Block Explorer:** https://explorer.zama.ai
 - **Network Config:** https://docs.zama.ai/fhevm/networks
 
+  Official Links:
+- Zama Hardhat Template: https://github.com/zama-ai/fhevm-hardhat-template
+- Zama Solidity Guides: https://docs.zama.ai/fhevm/solidity-guides
+- OpenZeppelin Confidential Contracts: https://github.com/OpenZeppelin/openzeppelin-confidential-contracts
+- @zama-fhe/sdk: npm install @zama-fhe/sdk
+- Inflectiv Dataset Creation: https://app.inflectiv.ai
+- Flue Framework: https://github.com/withastro/flue
+
 ---
 
 ## TUTORIALS & EXAMPLES
