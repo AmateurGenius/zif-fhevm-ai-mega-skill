@@ -1,0 +1,71 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "symbol", "type": "string" },
+      { "internalType": "string", "name": "uri", "type": "string" }
+    ],
+    "name": "ConfidentialERC7984Token",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "to", "type": "address" },
+      { "indexed": false, "internalType": "bytes32", "name": "handle", "type": "bytes32" }
+    ],
+    "name": "ConfidentialMinted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "from", "type": "address" },
+      { "indexed": false, "internalType": "bytes32", "name": "handle", "type": "bytes32" }
+    ],
+    "name": "ConfidentialBurned",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "to", "type": "address" },
+      { "internalType": "externalEuint64", "name": "encryptedAmount", "type": "uint256" },
+      { "internalType": "bytes", "name": "inputProof", "type": "bytes" }
+    ],
+    "name": "confidentialMint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "to", "type": "address" },
+      { "internalType": "externalEuint64", "name": "encryptedAmount", "type": "uint256" },
+      { "internalType": "bytes", "name": "inputProof", "type": "bytes" }
+    ],
+    "name": "confidentialTransfer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "from", "type": "address" },
+      { "internalType": "externalEuint64", "name": "encryptedAmount", "type": "uint256" },
+      { "internalType": "bytes", "name": "inputProof", "type": "bytes" }
+    ],
+    "name": "confidentialBurn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getEncryptedTotalSupply",
+    "outputs": [{ "internalType": "euint64", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
