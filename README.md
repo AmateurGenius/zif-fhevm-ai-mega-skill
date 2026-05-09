@@ -22,4 +22,3 @@ One single drop-in skill that turns **any** AI coding agent (Claude Code, Cursor
 - Project-Flow workflow
 - Complete anti-patterns, resources, ABIs, CI
 
-**Submission ready for Zama developer program – May 2026**
