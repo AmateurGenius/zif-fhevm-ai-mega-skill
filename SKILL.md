@@ -55,14 +55,32 @@ FHE.allow(ciphertext, user);
 FHE.makePubliclyDecryptable(ciphertext);
 ```
 
-## 7. Input Proofs & Encrypted Inputs
-```solidity
-function castVote(externalEuint64 encryptedOption, bytes calldata inputProof) public {
+## 7. Input Proofs & Encrypted Inputs (Expanded)Input proofs are mandatory ZKPoK that prove the user knows the plaintext value.Correct Pattern (Most Common):solidity
+
+function confidentialVote(
+    externalEuint64 encryptedOption,
+    bytes calldata inputProof
+) external {
     euint64 option = FHE.fromExternal(encryptedOption, inputProof);
-    FHE.allowThis(option);
+    FHE.allowThis(option);                    // Critical
+    // ... rest of logic
+}
+
+Multiple Values Example:solidity
+
+function confidentialTransfer(
+    externalEuint64 encryptedAmount,
+    externalEuint64 encryptedFee,
+    bytes calldata proof
+) external {
+    euint64 amount = FHE.fromExternal(encryptedAmount, proof);
+    euint64 fee    = FHE.fromExternal(encryptedFee, proof); // same proof can cover multiple
+    FHE.allowThis(amount);
+    FHE.allowThis(fee);
     // ...
 }
-```
+
+
 
 ## 8. User Decryption (EIP-712) & Public Decryption
 - User signs EIP-712 → Gateway re-encrypts.
